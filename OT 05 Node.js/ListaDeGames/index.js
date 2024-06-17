@@ -18,6 +18,38 @@ let games = [
     {title: "Need for Speed: Underground 2", studio:"EA", price: 35}
 ]
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
     res.json(games);
 })
+
+app.use(express.json());
+
+app.post("/novogame", (req, res) =>{
+    let title = req.body.title;
+    let studio = req.body.studio;
+    let price = req.body.price;
+
+    console.log(title);
+    console.log(studio);
+    console.log(price);
+
+    let newGame = { title, studio, price };
+
+    games.push(newGame);
+
+    res.send("OK");
+    
+});
+
+app.put('/novogame/:index', (req, res) =>{
+    const { index } = req.params;
+    let title = req.body.title;
+    let studio = req.body.studio;
+    let price = req.body.price; 
+
+    games[index] = { title, studio, price };
+
+    return res.json(games);
+});
