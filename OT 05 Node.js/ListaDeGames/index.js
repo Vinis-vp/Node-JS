@@ -53,3 +53,9 @@ app.put('/novogame/:index', (req, res) =>{
 
     return res.json(games);
 });
+
+app.delete("/:index", (req, res) =>{
+    const { index } = req.params;
+    games.splice(index,1);
+    return res.json({message: "O Jogo foi deletado"});
+});
