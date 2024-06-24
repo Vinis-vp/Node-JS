@@ -2,137 +2,137 @@ const colecaoUf = [
 {
     id: 1,
     uf: "AC",
-    nomde: "Acre"
+    nome: "Acre"
 },
 {
     id: 2,
     uf: "AL",
-    nomde: "Alagoas"
+    nome: "Alagoas"
 },
 {
     id: 3,
     uf: "AM",
-    nomde: "Amazonas"
+    nome: "Amazonas"
 },
 {
     id: 4,
     uf: "AP",
-    nomde: "Amapá"
+    nome: "Amapá"
 },
 {
     id: 5,
     uf: "BA",
-    nomde: "Bahia"
+    nome: "Bahia"
 },
 {
     id: 6,
     uf: "CE",
-    nomde: "Ceará"
+    nome: "Ceará"
 },
 {
     id: 7,
     uf: "DF",
-    nomde: "Distrito Federal"
+    nome: "Distrito Federal"
 },
 {
     id: 8,
     uf: "ES",
-    nomde: "Espírito Santo"
+    nome: "Espírito Santo"
 },
 {
     id: 9,
     uf: "GO",
-    nomde: "Goiás"
+    nome: "Goiás"
 },
 {
     id: 10,
     uf: "MA",
-    nomde: "Maranhão"
+    nome: "Maranhão"
 },
 {
     id: 11,
     uf: "MT",
-    nomde: "Mato Grosso"
+    nome: "Mato Grosso"
 },
 {
     id: 12,
     uf: "MS",
-    nomde: "Mato Grosso do Sul"
+    nome: "Mato Grosso do Sul"
 },
 {
     id: 13,
     uf: "MG",
-    nomde: "Minas Gerais"
+    nome: "Minas Gerais"
 },
 {
     id: 14,
     uf: "PA",
-    nomde: "Pará"
+    nome: "Pará"
 },
 {
     id: 15,
     uf: "PB",
-    nomde: "Paraíba"
+    nome: "Paraíba"
 },
 {
     id: 16,
     uf: "PR",
-    nomde: "Paraná"
+    nome: "Paraná"
 },
 {
     id: 17,
     uf: "PE",
-    nomde: "Pernambuco"
+    nome: "Pernambuco"
 },
 {
     id: 18,
     uf: "PI",
-    nomde: "Piauí"
+    nome: "Piauí"
 },
 {
     id: 19,
     uf: "RJ",
-    nomde: "Rio de Janeiro"
+    nome: "Rio de Janeiro"
 },
 {
     id: 20,
     uf: "RN",
-    nomde: "rio grande do Norte"
+    nome: "rio grande do Norte"
 },
 {
     id: 21,
     uf: "RS",
-    nomde: "Rio Grande do Sul"
+    nome: "Rio Grande do Sul"
 },
 {
     id: 22,
     uf: "RO",
-    nomde: "Rondônia"
+    nome: "Rondônia"
 },
 {
     id: 23,
     uf: "RR",
-    nomde: "Roraima"
+    nome: "Roraima"
 },
 {
     id: 24,
     uf: "SC",
-    nomde: "Santa Catarina"
+    nome: "Santa Catarina"
 },
 {
     id: 25,
     uf: "SP",
-    nomde: "São Paulo"
+    nome: "São Paulo"
 },
 {
     id: 26,
     uf: "SE",
-    nomde: "Sergipe"
+    nome: "Sergipe"
 },
 {
     id: 27,
     uf: "TO",
-    nomde: "Tocantins"
+    nome: "Tocantins"
 }]
 
 export default colecaoUf;
