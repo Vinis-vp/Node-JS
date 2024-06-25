@@ -3,8 +3,8 @@ import colecaoUf from './dados.js';
 
 const app = express();
 
-const buscarUfsPorNome = (nodeUf) => {
-    return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nodeUf.toLowerCase()));
+const buscarUfsPorNome = (nomeUf) => {
+    return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
 };
 
 app.get('/ufs', (req, res)=> {
