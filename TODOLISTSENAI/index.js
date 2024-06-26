@@ -24,14 +24,14 @@ app.get('/', (req, res)=>{
     res.render('index',{tasksList: tasks});
 });
 
+
 app.get('/deletar/:id', (req, res)=>{
-    tasks = tasks.filter(function(val,index){
-        if (index != req.params.id){
-            return val;
-        }
-    })
-    res.render('index',{tasksList:tasks});
-})
+    const id = parseInt(req.params.id);
+    if (id >=0 && id < tasks.length){
+        tasks.splice(id, 1);
+    }
+    res.redirect('/');
+});
 
 app.listen(5000, ()=>{
     console.log('Servidor rodando em http://localhost:5000');

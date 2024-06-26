@@ -7,6 +7,8 @@
     <link href="/public/style.css" rel="stylesheet" />
     <!-- Adicione o Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/sweetalert2.min.css">
 </head>
 <body class="container">
     <div class="tarefas">
@@ -20,18 +22,25 @@
         <% } %>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/sweetalert2.all.min.js"></script>
     <!-- Adicione o Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script>
         function validarFormulario() {
-            var tarefa = document.getElementsByName("tarefa")[0].value;
+            var tarefa = document.getElementsByName("task")[0].value;
             if (tarefa.trim() === '') {
-                alert("Por favor, preencha a tarefa antes de enviar.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops',
+                    text: 'Por favor, preencha a tarefa antes  de enviar.',
+                });
                 return false;
             }
             return true;
         }
     </script>
+    
+   
 </body>
 </html>
